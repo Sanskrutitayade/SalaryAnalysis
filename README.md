@@ -1,46 +1,84 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+markdown
+Copy code
+# ML Engineer Salary Data Visualization
 
-## Available Scripts
+This project visualizes salary data for Machine Learning Engineers from 2020 to 2024, utilizing React and TypeScript. It provides a comprehensive analysis through a sortable table, a line graph, and insights generated via a chat interface powered by LLMs.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [File Structure](#file-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Data Visualization**: Interactive line graph showcasing salary trends over the years.
+- **Sortable Table**: Displays aggregated data, including the number of jobs and average salary per year, sortable by any column.
+- **Job Titles Breakdown**: Clicking on a row in the main table reveals a second table with job titles and their corresponding counts for that year.
+- **Chat Interface**: Integrates a chat component that generates insights based on the salary data using LLMs.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**: React, TypeScript
+- **Data Visualization**: Recharts
+- **Data Parsing**: PapaParse
+- **CSS Framework**: Ant Design (optional)
+- **LLM API**: Groq (or any preferred API)
+- **Development Tools**: VSCode, Node.js, npm
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Sanskrutitayade/JobTrendAnalytics.git
+   cd ml-engineer-salary-visualization
+Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+Copy code
+npm install
+Add your CSV file:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Place your data.csv file in the public directory.
+Run the application:
 
-### `npm run eject`
+bash
+Copy code
+npm start
+Usage
+Navigate to http://localhost:3000 in your web browser to view the application.
+Interact with the main table to sort data and view aggregated job titles by clicking on the years.
+Use the chat interface to get insights based on the salary data.
+File Structure
+bash
+Copy code
+/ml-engineer-salary-visualization
+├── /public
+│   ├── data.csv
+│   ├── index.html
+├── /src
+│   ├── /components
+│   │   ├── ChatComponent.tsx
+│   │   ├── SalaryLineChart.tsx
+│   │   └── SalaryTable.tsx
+│   ├── App.tsx
+│   ├── dataProcessing.ts
+│   ├── index.tsx
+│   ├── styles.css
+├── package.json
+├── tsconfig.json
+└── README.md
+Contributing
+Contributions are welcome! Please follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Fork the repository.
+Create a new branch (git checkout -b feature/YourFeature).
+Make your changes.
+Commit your changes (git commit -m 'Add some feature').
+Push to the branch (git push origin feature/YourFeature).
+Open a pull request.
