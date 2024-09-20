@@ -28,7 +28,6 @@ This project visualizes salary data for Machine Learning Engineers from 2020 to 
 - **Data Visualization**: Recharts
 - **Data Parsing**: PapaParse
 - **CSS Framework**: Ant Design (optional)
-- **LLM API**: Groq (or any preferred API)
 - **Development Tools**: VSCode, Node.js, npm
 
 ## Installation
